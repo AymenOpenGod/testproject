@@ -1,0 +1,17 @@
+version: '3'
+
+#Define services
+services:
+
+  #Back-end 
+  back-end:
+    build: ./extranet-redesign-back
+    container_name: back-end
+    ports:
+      - 8084:8084 
+
+
+#Volumes for DB data
+volumes:
+  wtw-data:
+
